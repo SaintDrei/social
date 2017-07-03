@@ -11,15 +11,16 @@
 <script type="text/javascript" src="js/jquery.social.stream.wall.1.8.js"></script>
 <script type="text/javascript" src="js/jquery.social.stream.1.6.1.min.js"></script>
 
-<script type="text/javascript">
+<script type="text/javascript"> 
 jQuery(document).ready(function($){
 	$('#social-stream').dcSocialStream({
 		feeds: {
 			twitter: {
-				id: 'saintdrei'
+				id: 'saintdrei',
+                url: 'twitter.php'
 			},
 			rss: {
-				id: 'http://feeds.feedburner.com/DesignChemical',
+				id: '',
 				out: 'intro,thumb,title,text,share'
 			},
 			stumbleupon: {
@@ -30,13 +31,13 @@ jQuery(document).ready(function($){
 				out: 'intro,thumb,text,user,share'
 			},
 			google: {
-				id: '111470071138275408587'
+				id: '114416357014645071807'
 			},
 			delicious: {
-				id: 'designchemical'
+				id: ''
 			},
 			vimeo: {
-				id: 'brad'
+				id: 'anberlin'
 			},
 			youtube: {
 				id: 'UCDsO-0Yo5zpJk575nKXgMVA',
@@ -44,7 +45,7 @@ jQuery(document).ready(function($){
 				out: 'intro,thumb,title,user,share'
 			},
 			pinterest: {
-				id: 'jaffrey,designchemical/design-ideas'
+				id: 'amberkoehler12'
 			},
 			flickr: {
 				id: ''
@@ -59,19 +60,27 @@ jQuery(document).ready(function($){
 				id: 'isacg'
 			},
 			tumblr: {
-				id: 'andreisanty',
-				thumb: 250
+				id: 'andreisanty-blog',
+				images: 'small',
+                thumb : 100,
+                video : 250
+                
 			},
 			instagram: {
-				id: '!247311512',
-				accessToken: '10361ef315fe4c6396ad0fe1e5fba162',
-                clientId: '15a36db7376649b1af8c44ff93370aae'
+				id: '!2092504772',
+				accessToken: '2092504772.15a36db.757e96778cbd4880be8389d1cbf255b4',
+                clientId: '15a36db7376649b1af8c44ff93370aae',
+                redirectUrl: 'http://localhost:8085/social'
+                //247311512 def
+                //2092504772 mine
+                
+                //2092504772.15a36db.757e96778cbd4880be8389d1cbf255b4
 			}
 		},
 		rotate: {
 			delay: 0
 		},
-		twitterId: 'designchemical',
+		twitterId: 'saintdrei',
 		control: false,
 		filter: true,
 		wall: true,
